@@ -21,6 +21,7 @@ The user wants a live phone demonstration scanning a QR shown on another device.
 
 - Mobile-first **Next.js + TypeScript** website.
 - Frontend hosting on **Vercel**.
+- Directly copy the existing screen source and assets from https://github.com/shashanka2a/MonadPay.Me into this main repo. Keep their layout, styling, and behavior; only necessary application wiring/configuration may change. The source already uses Next.js + TypeScript.
 - Both existing-wallet connection and email/social login with an in-app wallet are required planned sign-in methods.
 - An authentication/embedded-wallet provider has not been selected.
 - Vercel hosts the web app; the Solidity contracts deploy separately to Monad.
@@ -34,13 +35,19 @@ The user wants a live phone demonstration scanning a QR shown on another device.
 - Compilation and all **11 existing contract tests passed on 4 November 2026**.
 - Working local dependency setup: `npm install --ignore-scripts` in `contracts/checkout`.
 - The existing Ganache lockfile has an `npm ci`/macOS-only `fsevents` issue on Windows. The fallback installation passed without changing the lockfile.
-- No frontend, QR scanner, merchant onboarding, cross-chain integration, or four-currency conversion has been implemented in this repository yet.
+- The friend's 25 frontend source files have been copied unchanged and published to `origin/main` in commit `9dd389e9f195e09351f91dcb0b4cc931c5d20b5b`. The validation-note follow-up is `294e15e796e51afe7c97130eb264acd881e01c4d`. The frozen dependency install, production build, lint, TypeScript checks and production route checks passed. Desktop and phone landing checks, mobile navigation and customer demo-flow checks passed. Original wallet, QR, quote and payment behaviors remain demo simulations; live integrations are separate work.
 - No deployment address or completed onchain demo has been verified in this session.
 - All 10 MONSKILLS folders are installed under `.agents/skills/`, passed validation, and were saved to GitHub in commit `b7f297e5ec162caebee8df58f7ece6650e42c9d1`.
 
 ## Routing discussion
 
-LI.FI, deBridge, Circle CCTP, and Chainlink CCIP have been discussed. The final integration choice is still open.
+LI.FI, deBridge, Circle CCTP, and Chainlink CCIP have been discussed. The user has now authorized **LI.FI integration on a separate `feat/lifi-integration` branch/worktree**, alongside the UI import.
+
+The current integration scope uses LI.FI-supported routes; a separate Mento SDK is not part of this task. Catalog presence and a returned quote do not by themselves approve a settlement asset or establish an acceptable conversion rate. Verify configured assets and route outputs explicitly.
+
+The user subsequently authorized **merging the verified UI import into main and pushing it to origin**, after the build/render checks pass. The coordinating agent will perform that push. **LI.FI remains on its separate local branch; no LI.FI merge or remote push is authorized.**
+
+The user approved launching the official **LI.FI Widget on a separate `/lifi` testing page**, using the maintained Next.js example at https://github.com/lifinance/widget/tree/main/examples/nextjs. Keep the copied MonadPay screens unchanged. This page tests LI.FI routing; it does not by itself settle or verify a MonadPay invoice. Use the official SDK for routing/execution and retain only necessary application-specific invoice checks.
 
 CCIP discussion in session 98623 is **research only**. Do not turn this research into an integration task without a user instruction. Another session may receive its own explicit implementation task.
 
@@ -50,7 +57,7 @@ Accepting multiple settlement-token addresses in invoices and supplying real con
 
 1. Merchant onboarding: should shop owners create their own profiles, or should the team configure the initial demo shops?
 2. Which provider should support email/social sign-in and in-app wallets?
-3. Which routing provider and first chain/token route should be implemented?
+3. Which first LI.FI chain/token route and verified settlement assets should be enabled for the live demo?
 4. Which live conversion routes are available for the four target denominations?
 
 ## Sources for this context
