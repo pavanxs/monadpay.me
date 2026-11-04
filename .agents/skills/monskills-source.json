@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "source": "https://github.com/therealharpaljadeja/monskills",
+  "sourceCommit": "a37083fa5c49cd3a04a6935be381e9d49e2261ed",
+  "sourceTree": "d2880a6160b29126d8bc22f9d5d012d33a673c7f",
+  "sourceSkillsTree": "20ca2212907f548679118600aee2c4cc5d0d762b",
+  "license": "MONSKILLS-LICENSE.txt",
+  "skills": [
+    "addresses",
+    "concepts",
+    "gas",
+    "indexer",
+    "monskill",
+    "scaffold",
+    "tooling-and-infra",
+    "wallet",
+    "wallet-integration",
+    "why-monad"
+  ],
+  "installation": {
+    "scope": "project",
+    "directory": ".agents/skills",
+    "cli": "skills@1.7.6",
+    "cliManagedSkills": [
+      "addresses",
+      "concepts",
+      "gas",
+      "indexer",
+      "monskill",
+      "scaffold",
+      "tooling-and-infra",
+      "wallet-integration",
+      "why-monad"
+    ],
+    "manuallyVendoredSkills": [
+      "wallet"
+    ],
+    "note": "skills-lock.json records the nine CLI-managed skills. The wallet skill is vendored here with the compatibility fix below because its upstream frontmatter is rejected by the installer."
+  },
+  "compatibilityFixes": [
+    {
+      "path": "wallet/SKILL.md",
+      "change": "Convert the unquoted description to a YAML folded scalar (>-) without changing the description text or skill body.",
+      "reason": "The upstream description contains an unquoted colon-space in 'For example:' and fails YAML parsing."
+    }
+  ],
+  "upstreamGitBlobHashes": {
+    "addresses/SKILL.md": "b35c70e00e3cbcd10b444baaadff69715529ceee",
+    "addresses/SKILL.zh.md": "5a74dc8bd989a02e7cc508f1e6ee7bcefd92be6a",
+    "concepts/SKILL.md": "0fdaabdd820fe0655a1c734062ee4567d92cfff6",
+    "concepts/SKILL.zh.md": "30a30d458999063a2bcdb97b9272e1e6e5f12863",
+    "concepts/references/async-execution.md": "50c92d3a4e6aa8f14aa381279c5795ed7f2600fb",
+    "concepts/references/async-execution.zh.md": "eb69f77d5abc9f0ff1b0edb3c1d272f835c3d784",
+    "concepts/references/block-states.md": "2917c15e4bfcee5d5e3505a0f1be6e45a7296e55",
+    "concepts/references/block-states.zh.md": "b71f88de8bd79b4b4f8a6eb1187c0d294d4dc004",
+    "concepts/references/eip-7702.md": "7b16117f38cd31ee9b2174390ba7fd342233c70b",
+    "concepts/references/eip-7702.zh.md": "2a3057ce017d9970c35bb4cef1dd56fe6162abdc",
+    "concepts/references/execution-events.md": "7cb5267916f750c24bebd05d4e5ef49d98558c8a",
+    "concepts/references/execution-events.zh.md": "f171aa117432c8bf0b7fe494fb4cdfe4505c23c0",
+    "concepts/references/parallel-execution.md": "5e68d9c115aed00d8d7a97c67f46d690afbb1790",
+    "concepts/references/parallel-execution.zh.md": "8260ef4be4756742af4fdfc6502d58747c7ca18c",
+    "concepts/references/realtime-data.md": "406179e78c50493118291d67b0214b89bc1eeb98",
+    "concepts/references/realtime-data.zh.md": "83036b32c9614a3b74df79187aab0b9c2706ab53",
+    "concepts/references/reserve-balance.md": "90a9c856c1047ac38ee09495f68bf0c72c1e7189",
+    "concepts/references/reserve-balance.zh.md": "5983910722a0a7a140e438ccfbbb664352767a3f",
+    "gas/SKILL.md": "9e4af02af746de990732586fa372897869e4d3db",
+    "gas/SKILL.zh.md": "bf9505e7d1422b05bf55087179fdd6e18fe41381",
+    "indexer/SKILL.md": "ccac5563fc9dfd6e47db01b47a35f2e57d5aa82c",
+    "indexer/references/envio-cloud-cli.md": "87042744319854513bf72818708225bd25d0a150",
+    "indexer/references/envio-cloud-workflows.md": "29287b20c0f3a4d32ebe1cb16e1cb5028d0b8596",
+    "monskill/SKILL.md": "645d04125bb3f6c58fa18db0208b3ba452cb86b3",
+    "scaffold/SKILL.md": "3f39696d3cdd0e597cd3765aef9c7e58f407713c",
+    "scaffold/SKILL.zh.md": "8d576ba94bef84f0561de7b3f56fd5e68a7eaf30",
+    "tooling-and-infra/SKILL.md": "52f0ae9db14ff6ddf24bf3bfd3f1c8f99fd32c48",
+    "tooling-and-infra/SKILL.zh.md": "0c4fa14cd99cb0d90a595a5a3ed49975f2190f40",
+    "wallet-integration/SKILL.md": "f2f3ccf910d194c7dda21a3fd576f1a35d075d82",
+    "wallet-integration/SKILL.zh.md": "d9f4025ba023123c1820a51702ac6cdd2c3a99e8",
+    "wallet-integration/references/para-cli.md": "954c84b6516d55646155b852917464d22d28b927",
+    "wallet-integration/references/para-cli.zh.md": "15897d16833396ed0f23fef442ed5d04db52d54e",
+    "wallet-integration/references/para-monad-wiring.md": "fb8606ea39a1901cb06a1b94c73e5a58e774d9bf",
+    "wallet-integration/references/para-monad-wiring.zh.md": "c4fb6374c82d5aa6ab264b528abc16b8bb3fa6b3",
+    "wallet-integration/references/para-workflows.md": "654b945622b26b68cf1ed19bafd2485a5445759d",
+    "wallet-integration/references/para-workflows.zh.md": "3c61732b5c7ee2dfdbb284cef89240ff12529683",
+    "wallet/SKILL.md": "83eced16c07b3db20eeb8a2c06f3c89c52abe522",
+    "wallet/SKILL.zh.md": "5dcf58788291abd4a7cde1a68c9c3c2eed3f62d0",
+    "why-monad/SKILL.md": "ff1894347ee6f8457dea58b3e822e9a008723ddd",
+    "why-monad/SKILL.zh.md": "fbedece11800b59c15a59149e3819a5c6a7bd319"
+  }
+}
