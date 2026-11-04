@@ -15,3 +15,10 @@ coverage/
 !.env.example
 !.env.sample
 *.log
+
+# Frontend tooling
+.pnpm-store/
+next-env.d.ts
+*.tsbuildinfo
+out/
+.figma/
