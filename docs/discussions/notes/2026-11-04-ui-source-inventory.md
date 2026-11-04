@@ -12,7 +12,7 @@ Session: 98623; audit agent: checkout_ccip_audit.
 
 ## Pinned source
 
-- Repository: https://github.com/shashanka2a/MonadPay.Me
+- Source: user-provided frontend repository.
 - Branch: `main`.
 - Reviewed commit: `1c2d3dc4685293645cca4cb652b10439738c5559`.
 - Source clone: `D:\projects\experiments\monadpay-friend-source-2026-11-04`.

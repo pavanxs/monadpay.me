@@ -13,7 +13,7 @@ Agent task: ccip_feasibility (frontend import work cycle).
 
 ## Source and provenance
 
-- Repository: https://github.com/shashanka2a/MonadPay.Me
+- Source: user-provided frontend repository.
 - Exact source commit: 1c2d3dc4685293645cca4cb652b10439738c5559
 - Isolated source clone: D:\\projects\\experiments\\monadpay-friend-source-2026-11-04
 - Source history contains two commits: initial scaffold and a mobile UX/icon update.
@@ -51,7 +51,7 @@ Agent task: ccip_feasibility (frontend import work cycle).
 
 ## Local checkpoint and dependency installation
 
-- Created local branch feat/ui-import and commit 9dd389e9f195e09351f91dcb0b4cc931c5d20b5b. The commit contains only the imported frontend/configuration and this implementation note; parent/peer notes were excluded.
+- Created local branch feat/ui-import and commit 65991ce60b39ef3f700b133e8ff19b2f5a9558c2. The commit contains only the imported frontend/configuration and this implementation note; parent/peer notes were excluded.
 - Shared that checkpoint with the LI.FI implementation agent for a separate worktree. No remote push occurred.
 - Read the new independent UI inventory note and coordinating UI-import note before validation.
 - The first pnpm launch stalled while selecting the pinned package manager. A direct installed pnpm 10.28.1 invocation with per-process npm_config_manage_package_manager_versions=false progressed against the unchanged frozen lockfile. The repository still pins the source's pnpm 10.34.3.
@@ -75,4 +75,4 @@ The user subsequently authorized pushing the verified UI to main/origin. The coo
 - Browser-check helper, screenshots, and HTTP/fidelity reports are local validation artifacts outside the repository: D:\\projects\\experiments\\monadpay-ui-checks-2026-11-04. The production validation server uses localhost:3011; its temporary browser profile is isolated from the user's normal browser.
 - The source's Privy/MetaMask branding, sample balances, fees, QR values and transaction receipts remain demo UI. No auth provider, real QR decoder or payment integration was added.
 
-The UI code/configuration checkpoint is 9dd389e9f195e09351f91dcb0b4cc931c5d20b5b; this follow-up commit records validation only. README, PROJECT_CONTEXT and peer notes remain owned by the coordinating/peer agents.
+The UI code/configuration checkpoint is 65991ce60b39ef3f700b133e8ff19b2f5a9558c2; this follow-up commit records validation only. README, PROJECT_CONTEXT and peer notes remain owned by the coordinating/peer agents.

@@ -62,7 +62,7 @@ LI.FI is being integrated on the separate local `feat/lifi-integration` branch. 
 
 ### Imported frontend
 
-The screen source comes directly from [shashanka2a/MonadPay.Me](https://github.com/shashanka2a/MonadPay.Me), commit `1c2d3dc4685293645cca4cb652b10439738c5559`. All 25 imported `src/` files matched the source byte-for-byte. Setup changes are limited to cross-platform commands, package-manager and Vercel configuration, and boundaries around the existing contracts and documentation.
+The existing frontend screens were copied directly from the user-provided source. All 25 imported `src/` files matched the source byte-for-byte. Setup changes are limited to cross-platform commands, package-manager and Vercel configuration, and boundaries around the existing contracts and documentation.
 
 | Route | Screen |
 | --- | --- |

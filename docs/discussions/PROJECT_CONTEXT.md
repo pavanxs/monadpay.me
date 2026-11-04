@@ -21,7 +21,7 @@ The user wants a live phone demonstration scanning a QR shown on another device.
 
 - Mobile-first **Next.js + TypeScript** website.
 - Frontend hosting on **Vercel**.
-- Directly copy the existing screen source and assets from https://github.com/shashanka2a/MonadPay.Me into this main repo. Keep their layout, styling, and behavior; only necessary application wiring/configuration may change. The source already uses Next.js + TypeScript.
+- Directly copy the existing screen source and assets from the user-provided source into this main repo. Keep their layout, styling, and behavior; only necessary application wiring/configuration may change. The source already uses Next.js + TypeScript.
 - Both existing-wallet connection and email/social login with an in-app wallet are required planned sign-in methods.
 - An authentication/embedded-wallet provider has not been selected.
 - Vercel hosts the web app; the Solidity contracts deploy separately to Monad.
@@ -35,7 +35,7 @@ The user wants a live phone demonstration scanning a QR shown on another device.
 - Compilation and all **11 existing contract tests passed on 4 November 2026**.
 - Working local dependency setup: `npm install --ignore-scripts` in `contracts/checkout`.
 - The existing Ganache lockfile has an `npm ci`/macOS-only `fsevents` issue on Windows. The fallback installation passed without changing the lockfile.
-- The friend's 25 frontend source files have been copied unchanged and published to `origin/main` in commit `9dd389e9f195e09351f91dcb0b4cc931c5d20b5b`. The validation-note follow-up is `294e15e796e51afe7c97130eb264acd881e01c4d`. The frozen dependency install, production build, lint, TypeScript checks and production route checks passed. Desktop and phone landing checks, mobile navigation and customer demo-flow checks passed. Original wallet, QR, quote and payment behaviors remain demo simulations; live integrations are separate work.
+- The friend's 25 frontend source files have been copied unchanged and published to `origin/main` in commit `65991ce60b39ef3f700b133e8ff19b2f5a9558c2`. The validation-note follow-up is `aef233f25086d077616ae339946ba49ab3507cec`. The frozen dependency install, production build, lint, TypeScript checks and production route checks passed. Desktop and phone landing checks, mobile navigation and customer demo-flow checks passed. Original wallet, QR, quote and payment behaviors remain demo simulations; live integrations are separate work.
 - No deployment address or completed onchain demo has been verified in this session.
 - All 10 MONSKILLS folders are installed under `.agents/skills/`, passed validation, and were saved to GitHub in commit `b7f297e5ec162caebee8df58f7ece6650e42c9d1`.
 

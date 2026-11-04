@@ -4,7 +4,7 @@ Date: 4 November 2026.
 
 ## Confirmed user instruction
 
-Copy the actual screens and assets from https://github.com/shashanka2a/MonadPay.Me into our main repository, https://github.com/pavanxs/monadpay.me. This is direct source reuse, not a redesign or an interpretation of screenshots.
+Copy the actual screens and assets from the user-provided source into our main repository, https://github.com/pavanxs/monadpay.me. This is direct source reuse, not a redesign or an interpretation of screenshots.
 
 Preserve layout, styling, and behavior. Make only the setup/wiring changes needed to run the copied frontend. The source already uses Next.js App Router + React + TypeScript, matching the selected Vercel web stack.
 
@@ -39,7 +39,7 @@ Inspect the imported frontend, verify source fidelity and build/render results, 
 
 The user asked to work on LI.FI while the screen import finishes, in a separate branch, and to report completion before pushing. Remote pushes of the new UI/LI.FI work are now on hold for user review.
 
-- UI checkpoint: `feat/ui-import`, local commit `9dd389e9f195e09351f91dcb0b4cc931c5d20b5b`.
+- UI checkpoint: `feat/ui-import`, local commit `65991ce60b39ef3f700b133e8ff19b2f5a9558c2`.
 - The implementation owner reports all 25 imported frontend source files match the friend's source; install/build/render verification is still underway.
 - LI.FI agent will use an isolated `feat/lifi-integration` worktree based on that checkpoint. It owns quote/discovery/status integration and wallet-adapter boundaries, not the UI-copy branch.
 - Read the peer's merchant-directory note through its consolidated research (line 194). The user prefers LI.FI-supported assets without an extra Mento SDK integration. Peer quote checks flagged GBPm/USDm price anomalies; do not auto-approve tokens from catalog presence alone.
@@ -70,4 +70,8 @@ Updated root README with the actual imported frontend, original source commit, r
 
 ## Verified UI push
 
-Pushed `feat/ui-import` to remote `main` without force. `git ls-remote origin refs/heads/main` verified `9dd389e9f195e09351f91dcb0b4cc931c5d20b5b` on https://github.com/pavanxs/monadpay.me. The frontend owner's follow-up `294e15e796e51afe7c97130eb264acd881e01c4d` records the completed checks and changes no screen source. Its production preview is running at http://localhost:3011. Root will include that validation note and current UI documentation while fast-forwarding local main. LI.FI work remains separate and unpushed.
+Pushed `feat/ui-import` to remote `main` without force. `git ls-remote origin refs/heads/main` verified `65991ce60b39ef3f700b133e8ff19b2f5a9558c2` on https://github.com/pavanxs/monadpay.me. The frontend owner's follow-up `aef233f25086d077616ae339946ba49ab3507cec` records the completed checks and changes no screen source. Its production preview is running at http://localhost:3011. Root will include that validation note and current UI documentation while fast-forwarding local main. LI.FI work remains separate and unpushed.
+
+## Requested message and documentation cleanup
+
+The user requested removal of the optional source-owner name and the quoted UI commit description. Reworded that commit and replayed only its two UI documentation descendants with identical Git trees and preserved author/committer metadata. Updated current optional source references in README and the four UI/context notes; screen code, setup, contracts and required Web3Icons attribution are unchanged. The three local branch bases will be updated using exact old-ref checks, and main will be published using an explicit expected-commit lease so another remote change cannot be overwritten. No new build is needed for this message/documentation-only change; prior UI checks remain applicable.
